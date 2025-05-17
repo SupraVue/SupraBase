@@ -1,48 +1,61 @@
-# SupraBase - База данных на Vue.js
+# SupraBase - Vue.js Database
 
-Современная система управления базами данных, разработанная на Vue.js.
+A modern database management system built with Vue.js.
 
-## Возможности
+## Features
 
-- Локальная база данных с поддержкой .db файлов
-- Импорт и экспорт данных в формате .db
-- Простой интерфейс для управления данными
-- Поддержка MySQL баз данных
+- Local database with .db file support
+- Import and export data in .db format
+- Simple interface for data management
+- MySQL database support
 
-## Технологии
+## Technologies
 
 - Vue.js 3
 - Vue Router
-- Локальное хранилище (localStorage)
-- Файловая система .db
+- Local storage (localStorage)
+- .db file system
 
-## Установка и запуск
+## Installation and Setup
 
 ```bash
-# Установка зависимостей
+# Install dependencies
 npm install
 
-# Запуск сервера разработки
+# Start development server
 npm run dev
 
-# Сборка для production
+# Build for production
 npm run build
 ```
 
-## Структура проекта
+## Project Structure
 
-- `src/services/dbFile.js` - Сервис для работы с .db файлами
-- `src/services/dbConverter.js` - Утилиты для конвертации данных
-- `src/services/userModel.js` - Модель для работы с пользователями
-- `src/views/` - Компоненты представлений
+- `src/services/dbFile.js` - Service for working with .db files
+- `src/services/dbConverter.js` - Utilities for data conversion
+- `src/services/userModel.js` - Model for user management
+- `src/views/` - View components
 
-## Работа с .db файлами
+## Working with .db Files
 
-Проект поддерживает экспорт и импорт данных в формате .db файлов:
+The project supports exporting and importing data in .db file format:
 
-1. Для экспорта данных нажмите кнопку "Создать .db файл"
-2. Для импорта данных используйте кнопку "Импорт .db файла"
+1. To export data, click the "Create .db file" button
+2. To import data, use the "Import .db file" button
 
-## Лицензия
+## Local Hosting
+
+To host this application on your local machine:
+
+1. After building the project with `npm run build`
+2. You can serve the contents of the `dist` folder using a local server
+3. For a simple local server, you can use:
+   ```bash
+   npm install -g serve
+   serve -s dist
+   ```
+4. The application will be available at http://localhost:5000
+
+## License
 
 MIT
