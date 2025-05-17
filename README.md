@@ -1,5 +1,5 @@
 # SupraBase - Vue.js Database
-
+# ! Local Hosting only ! 
 A modern database management system built with Vue.js.
 
 ## Features
